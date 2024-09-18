@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+/* @import "~react-image-gallery/styles/css/image-gallery.css"; */
+:root {
+  font-family: "Readex", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --main-login-bg: #f8f8f8;
+  --fc-border-color: rgb(248, 248, 248);
+  --fc-event-bg-color: rgba(231, 240, 236, 1);
+  --fc-event-text-color: rgba(44, 71, 62, 1);
+  --white: #fff;
+  --green: rgb(44 71 62);
+  --secondary: #eee;
+  --secondary-text: #ccc;
+  --text-color: rgb(127, 127, 127);
+  --red: #6417b0;
+  --main-red: #f33434;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Readex", sans-serif !important;
+}
+
+button {
+  font-weight: 400 !important;
+  font-size: 16px;
+}
+.ant-menu .ant-menu-item-selected {
+  background-color: rgb(247, 243, 255) !important;
+  color: var(--green);
+}
+
+.ant-menu-inline .ant-menu-item:after,
+.ant-menu-vertical-left .ant-menu-item:after,
+.ant-menu-vertical-right .ant-menu-item:after,
+.ant-menu-vertical .ant-menu-item:after {
+  border: none;
+}
+
+.ant-menu-light .ant-menu-item-active,
+.ant-menu-light .ant-menu-item:hover,
+.ant-menu-light .ant-menu-submenu-active,
+.ant-menu-light .ant-menu-submenu-title:hover,
+.ant-menu-light .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open {
+  color: var(--green);
+  border-radius: 20px;
+  background: rgb(247, 243, 255) !important;
+}
+
+.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light {
+  padding: 8px;
+}
+.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-light li {
+  border-radius: 8px !important;
+}
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  position: relative;
+  border-radius: 8px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+  border-color: var(--green);
+  border-right-width: 1px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+::-webkit-scrollbar {
+  background: #f1f1f1;
+  width: 8px;
+  height: 8px;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-thumb {
+  /* border-radius: 4px; */
+  background: #a8a8a8;
+  cursor: pointer !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  cursor: pointer !important;
+}
+
+aside {
+  margin: 100px 20px;
+  border-radius: 20px;
+  height: 85vh !important;
+  @media (max-width: 540px) {
+    margin: 167px 20px;
+  }
+  @media (max-width: 991px) {
+    height: calc(85vh + 68px) !important;
+  }
+}
+/* tr td {
+  min-width: 140px;
+}
+
+tr th {
+  min-width: 160px;
+} */
+
+.ok-button-confirm,
+.cancel-button-confirm {
+  width: 200px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  border: 1px solid var(--siyohrang, #6417b0) !important;
+  background: var(--och-siyohrang, #f7f3ff) !important;
+  color: var(--siyohrang, #6417b0) !important;
+  font-family: "Readex Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ant-modal-confirm {
+  width: auto !important;
+  min-width: 416px !important;
+  max-width: 600px !important;
+  @media (max-width: 540px) {
+    min-width: 200px !important;
+    max-width: 340px !important;
+  
+  }
+}
+.ant-modal-confirm-btns{
+  button{
+    @media (max-width: 540px) {
+      width: 100px;
+    }
+  }
+}
+.ant-modal-confirm-body {
+  justify-content: center;
+  text-align: center;
+}
+.ant-modal-confirm-title {
+  color: var(--Asosiy-shrift, #212121) !important;
+  font-family: "Readex Pro", sans-serif !important;
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500 !important;
+  line-height: normal;
+  margin: 40px 0 0px 0;
+}
+.ant-modal-confirm-btns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.ant-modal-content {
+  border-radius: 20px !important;
+  @media (max-width: 540px) {
+    margin-top: 60px !important;
+  }
+}
+
+
+.ant-modal-close-x svg {
+  color: #6417b0;
+  width: 20px;
+  height: 20px;
+}
+
+.ant-modal-title {
+  color: var(--Asosiy-shrift, #212121);
+  font-family: "Readex Pro", sans-serif;
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.ant-modal-body {
+  overflow: hidden;
+}
